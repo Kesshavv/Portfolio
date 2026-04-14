@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    padding: 60px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+/* SECTION */
+section {
+    padding: 40px 20px;
+}
+
+/* PROJECTS */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 12px;
+    width: 220px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background: linear-gradient(orange, red);
+}
+
+/* 🔥 SKILLS INTERACTIVE */
+.skill-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    width: 160px;
+    border-radius: 10px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+/* fade others */
+.skill-container:hover .skill-card {
+    opacity: 0.3;
+    transform: scale(0.9);
+}
+
+/* focus one */
+.skill-card:hover {
+    opacity: 1 !important;
+    transform: scale(1.2);
+    background: linear-gradient(orange, red);
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    padding: 15px;
+}
